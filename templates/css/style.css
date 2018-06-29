@@ -1,0 +1,74 @@
+.navbar{
+ background:#444444;
+}
+
+.nav-link , .navbar-brand{
+ color: #FFFFFF;
+ cursor: pointer;
+}
+.navbar-brand:hover {
+ font-style: inherit;
+ color: #f4f4f4;
+ cursor: pointer;
+}
+
+.nav-link{
+ margin-right: 1em;
+ color: #f4f4f4;
+}
+.nav-link:hover{
+ background: #f4f4f4;
+ color: #444444;
+}
+.navbar-collapse{
+ justify-content: around;
+}
+.navbar-toggler{
+ background: #444444;
+}
+
+.bg-primary{
+background-color:#444444;
+}
+
+.header{
+ background-image: url('../img/headerback.jpg');
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+}
+
+#toprow {
+ background: darkred;
+ height:300px;
+}
+
+h3 {
+ font-family: "Arial Black";
+ font-size:20px;
+}
+
+
+.imgs {
+  border-width: 2px;
+  border-color: #444444;
+}
+
+.bord {
+  border-width: 2px;
+  border-style: solid ;
+  border-color: #444444;
+}
+
+
+.h6  {
+
+}
+p {
+ font-color: white;
+
+}
+.btext {
+ font-color: white;
+
+}

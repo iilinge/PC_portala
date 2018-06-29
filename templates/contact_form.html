@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Портал | Заполнение формы</title>
+
+    {# Подгружаем документы с расширением .css и .js #}
+    {% load staticfiles %}
+    {% load bootstrap4 %}
+    {%  bootstrap_css %}
+    {%  bootstrap_javascript %}
+    {%  bootstrap_messages %}
+    {% include 'styleblock.html' %}
+</head>
+<body>
+{%  include 'sitemenu.html' %}
+
+{% block mainrow %}
+{% endblock %}
+
+<div class="row">
+    <div class="col-3">
+        <div>{% if latest_question_list %}
+             <ul>
+                {% for question in latest_question_list %}
+                <li><a href="/portal/{{ question.id }}/">{{ question.questiontext }}</a></li>
+                {% endfor %}
+             </ul>
+              {% else %}
+                    <p>нет доступных опросов.</p>
+              {% endif %}
+        </div>
+        <div>
+
+        </div>
+
+    </div>
+    <div class="col-6">
+    <h2>Форма связи:</h2>
+
+        {% if form.errors %}
+            <p style="color: red;">Исправьте ошибки{{ form.errors|pluralize }}.</p>
+        {% endif %}
+        <hr>
+        <form action="" method="post">
+           <table>
+               {{ form.as_table }}
+           </table>
+           <input type="submit" value="Услать">
+        </form>
+    </div>
+    <div class="col-3">
+    </div>
+</div>
+<div>
+
+
+
+</div>
+
+
+<div class=" align-self-center container-fluid bg-dark " >
+   <div class="container  ">
+      <div class="row align-items-center">
+             <div class="col-12 col-md-2  bord">
+             </div>
+             <div class="col-12 col-md-8 bord">
+                   <p class="btext">Карта портала</p>
+                 <div class="row">
+                    <div class="col">
+                     <ul><li class="btext"><h6>Компоненты СМП:</h6></li>
+                     <li class="btext">Стратегия</li>
+                     <li class="btext">Программа исследований</li>
+                     <li class="btext">Проект сооружения ПГЗРО</li>
+                     <li class="btext">Проект "Досье обоснования долговременной безопасности ПГЗРО"</li>
+                     </ul>
+                    </div>
+                    <div class="col">
+                     <ul><li><h6 class="btext">Среда СМП:</h6></li>
+                         <li>Ценности</li>
+                         <li class="btext">Система управления</li>
+                         <li class="btext">Международная практика ПИЛ&захоронения РАО</li>
+                         <li class="btext">Бюджетирование и финансирование</li>
+                         <li class="btext">ИТ-инфраструктура</li>
+                         <li class="btext">Люди</li>
+                     </ul>
+                    </div>
+                    <div class="col">
+                     <ul><li class="btext"><h6>Сопровождение СМП:</h6></li>
+                         <li class="btext">Поддержка портала</li>
+                         <li class="btext"><del>Сеть экспертов</del></li>
+                         <li class="btext"><del>Онтология СМП</del></li>
+                         <li class="btext"><del>Сеть знаний СМП</del></li>
+                     </ul>
+                    </div>
+                 </div>
+             </div>
+             <div class="col-12 col-md-2 bord">
+             </div>
+      </div>
+      <div class="row align-items-center">
+            <div class="col-12 col-md-2 bord">
+             </div>
+             <div class="col-12 col-md-8 bord"><h6>Нижнее меню сайта:</h6>
+             </div>
+             <div class="col-12 col-md-2 bord">
+             </div>
+      </div>
+      <div class="row aalign-items-center">
+            <div class="col-12 col-md-2 bord">
+             </div>
+             <div class="col-12 col-md-8 bord"><h6 class="">Институт безопасного развития атомной энергии</h6>
+             </div>
+             <div class="col-12 col-md-2 bord">
+             </div>
+      </div>
+   </div>
+</div>
+
+
+
+</body>
+</html>

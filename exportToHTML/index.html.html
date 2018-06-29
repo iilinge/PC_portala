@@ -1,0 +1,257 @@
+<html>
+<head>
+<title>index.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #606366; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(169,183,198); }
+.s1 { color: rgb(232,191,106); }
+.s2 { color: rgb(186,186,186); }
+.s3 { color: rgb(169,183,198); }
+.s4 { color: rgb(232,191,106); }
+.s5 { color: rgb(186,186,186); }
+.s6 { color: rgb(165,194,97); }
+.s7 { color: rgb(128,128,128); }
+.s8 { color: rgb(106,135,89); }
+.s9 { color: rgb(204,120,50); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#2b2b2b">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+index.html</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">{% </span><span class="s1">load </span><span class="s2">staticfiles </span><span class="s0">%}</span><span class="s3"> 
+ 
+</span><span class="s4">&lt;!DOCTYPE </span><span class="s5">html</span><span class="s4">&gt;</span><span class="s3"> 
+</span><span class="s4">&lt;html </span><span class="s5">lang=</span><span class="s6">&quot;en&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+</span><span class="s4">&lt;head&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;meta </span><span class="s5">charset=</span><span class="s6">&quot;UTF-8&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;title&gt;</span><span class="s3">Портал проекта</span><span class="s4">&lt;/title&gt;</span><span class="s3"> 
+ 
+    </span><span class="s7">{# Подгружаем документы с расширением .css и .js #}</span><span class="s3"> 
+ </span><span class="s0">{%  </span><span class="s1">load </span><span class="s2">bootstrap4 </span><span class="s0">%}</span><span class="s3"> 
+ </span><span class="s0">{%  </span><span class="s1">bootstrap_css </span><span class="s0">%}</span><span class="s3"> 
+ </span><span class="s0">{%  </span><span class="s1">bootstrap_javascript </span><span class="s0">%}</span><span class="s3"> 
+ </span><span class="s0">{%  </span><span class="s1">bootstrap_messages </span><span class="s0">%}</span><span class="s3"> 
+ 
+    </span><span class="s4">&lt;link </span><span class="s5">href=</span><span class="s6">&quot;</span><span class="s0">{% </span><span class="s1">static </span><span class="s8">&quot;bootstrap/css/bootstrap-responsive.css&quot; </span><span class="s0">%}</span><span class="s6">&quot; </span><span class="s5">rel=</span><span class="s6">&quot;stylesheet&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;script </span><span class="s5">src=</span><span class="s6">&quot;</span><span class="s0">{% </span><span class="s1">static </span><span class="s8">&quot;bootstrap/js/bootstrap.js&quot; </span><span class="s0">%}</span><span class="s6">&quot;</span><span class="s4">&gt;&lt;/script&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;link </span><span class="s5">rel=</span><span class="s6">&quot;stylesheet&quot; </span><span class="s5">type=</span><span class="s6">&quot;text/css&quot; </span><span class="s5">href=</span><span class="s6">&quot;static/css/style.css&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;script </span><span class="s5">src=</span><span class="s6">&quot;</span><span class="s0">{% </span><span class="s1">static </span><span class="s8">&quot;js/scripts.js&quot; </span><span class="s0">%}</span><span class="s6">&quot;</span><span class="s4">&gt;&lt;/script&gt;</span><span class="s3"> 
+ 
+</span><span class="s4">&lt;/head&gt;</span><span class="s3"> 
+</span><span class="s4">&lt;body&gt;</span><span class="s3"> 
+ 
+ 
+ 
+</span><span class="s4">&lt;nav </span><span class="s5">class=</span><span class="s6">&quot;navbar navbar-expand-lg  fixed-top&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+  </span><span class="s4">&lt;a </span><span class="s5">class=</span><span class="s6">&quot;navbar-brand&quot; </span><span class="s5">href=</span><span class="s6">&quot;#&quot;</span><span class="s4">&gt;</span><span class="s3">Портал Проекта ИИ</span><span class="s4">&lt;/a&gt;</span><span class="s3"> 
+  </span><span class="s7">{# Навигационное меню сайта #}</span><span class="s3"> 
+  </span><span class="s4">&lt;button </span><span class="s5">class=</span><span class="s6">&quot;navbar-toggler&quot; </span><span class="s5">type=</span><span class="s6">&quot;button&quot; </span><span class="s5">data-toggle=</span><span class="s6">&quot;collapse&quot; </span><span class="s5">data-target=</span><span class="s6">&quot;#navbarSupportedContent&quot; </span><span class="s5">aria-controls=</span><span class="s6">&quot;navbarSupportedContent&quot; </span><span class="s5">aria-expanded=</span><span class="s6">&quot;false&quot; </span><span class="s5">aria-label=</span><span class="s6">&quot;Toggle navigation&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;span </span><span class="s5">class=</span><span class="s6">&quot;navbar-toggler-icon&quot;</span><span class="s4">&gt;&lt;/span&gt;</span><span class="s3"> 
+  </span><span class="s4">&lt;/button&gt;</span><span class="s3"> 
+ 
+  </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;collapse navbar-collapse&quot; </span><span class="s5">id=</span><span class="s6">&quot;navbarSupportedContent&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;ul </span><span class="s5">class=</span><span class="s6">&quot;navbar-nav mr-auto&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;nav-item active&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;a </span><span class="s5">class=</span><span class="s6">&quot;nav-link&quot; </span><span class="s5">href=</span><span class="s6">&quot;#&quot;</span><span class="s4">&gt;</span><span class="s3">Раздел 1</span><span class="s4">&lt;span </span><span class="s5">class=</span><span class="s6">&quot;sr-only&quot;</span><span class="s4">&gt;</span><span class="s3">(current)</span><span class="s4">&lt;/span&gt;&lt;/a&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;nav-item&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;a </span><span class="s5">class=</span><span class="s6">&quot;nav-link&quot; </span><span class="s5">href=</span><span class="s6">&quot;#&quot;</span><span class="s4">&gt;</span><span class="s3">Раздел 2</span><span class="s4">&lt;/a&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;nav-item dropdown&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;a </span><span class="s5">class=</span><span class="s6">&quot;nav-link dropdown-toggle&quot; </span><span class="s5">href=</span><span class="s6">&quot;#&quot; </span><span class="s5">id=</span><span class="s6">&quot;navbarDropdown&quot; </span><span class="s5">role=</span><span class="s6">&quot;button&quot; </span><span class="s5">data-toggle=</span><span class="s6">&quot;dropdown&quot; </span><span class="s5">aria-haspopup=</span><span class="s6">&quot;true&quot; </span><span class="s5">aria-expanded=</span><span class="s6">&quot;false&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+          Раздел 3: 
+        </span><span class="s4">&lt;/a&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;dropdown-menu&quot; </span><span class="s5">aria-labelledby=</span><span class="s6">&quot;navbarDropdown&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+          </span><span class="s4">&lt;a </span><span class="s5">class=</span><span class="s6">&quot;dropdown-item&quot; </span><span class="s5">href=</span><span class="s6">&quot;#&quot;</span><span class="s4">&gt;</span><span class="s3">Действие 1</span><span class="s4">&lt;/a&gt;</span><span class="s3"> 
+          </span><span class="s4">&lt;a </span><span class="s5">class=</span><span class="s6">&quot;dropdown-item&quot; </span><span class="s5">href=</span><span class="s6">&quot;#&quot;</span><span class="s4">&gt;</span><span class="s3">Действие 2</span><span class="s4">&lt;/a&gt;</span><span class="s3"> 
+          </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;dropdown-divider&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+          </span><span class="s4">&lt;a </span><span class="s5">class=</span><span class="s6">&quot;dropdown-item&quot; </span><span class="s5">href=</span><span class="s6">&quot;#&quot;</span><span class="s4">&gt;</span><span class="s3">Действие подменю 2.1</span><span class="s4">&lt;/a&gt;&lt;/div&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;nav-item&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;a </span><span class="s5">class=</span><span class="s6">&quot;nav-link disabled&quot; </span><span class="s5">href=</span><span class="s6">&quot;#&quot;</span><span class="s4">&gt;</span><span class="s3">Меню 1</span><span class="s4">&lt;/a&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;/ul&gt;</span><span class="s3"> 
+ 
+ 
+    </span><span class="s4">&lt;form </span><span class="s5">class=</span><span class="s6">&quot;form-inline my-2 my-lg-0&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;input </span><span class="s5">class=</span><span class="s6">&quot;form-control mr-sm-2&quot; </span><span class="s5">type=</span><span class="s6">&quot;search&quot; </span><span class="s5">placeholder=</span><span class="s6">&quot;Search&quot; </span><span class="s5">aria-label=</span><span class="s6">&quot;Search&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;button </span><span class="s5">class=</span><span class="s6">&quot;btn btn-outline-success my-2 my-sm-0&quot; </span><span class="s5">type=</span><span class="s6">&quot;submit&quot;</span><span class="s4">&gt;</span><span class="s3">Поиск</span><span class="s4">&lt;/button&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;/form&gt;</span><span class="s3"> 
+  </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+</span><span class="s4">&lt;/nav&gt;</span><span class="s3"> 
+ 
+</span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;row-fluid&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+ 
+</span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+ 
+</span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;container&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+  </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;row&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-sm&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;h3&gt;</span><span class="s3">One of three columns</span><span class="s4">&lt;/h3&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-sm&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;h3&gt;</span><span class="s3">One of three columns</span><span class="s4">&lt;/h3&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;img </span><span class="s5">src=</span><span class="s6">&quot;</span><span class="s0">{% </span><span class="s1">static </span><span class="s8">&quot;img/pil_01.png&quot; </span><span class="s0">%}</span><span class="s6">&quot; </span><span class="s5">alt=</span><span class="s6">&quot;Модель ПИЛ&quot; </span><span class="s5">class=</span><span class="s6">&quot;imgs&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+ 
+    </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+ 
+  </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+</span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+</span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;container&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+  </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;row&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-2&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;h3 </span><span class="s5">class=</span><span class="s6">&quot;dert&quot;</span><span class="s4">&gt;</span><span class="s3">Блок col-auto mr-auto</span><span class="s4">&lt;/h3&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-6&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;h3 </span><span class="s5">class=</span><span class="s6">&quot;dert&gt;Блок col-md-4 ml-auto&lt;/h3&gt; 
+    &lt;/div&gt; 
+    &lt;div class=&quot;</span><span class="s5">col-2</span><span class="s3">&quot;&gt; 
+        </span><span class="s4">&lt;h3&gt;</span><span class="s3">Блок col-md-2 ml-auto</span><span class="s4">&lt;/h3&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+  </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+</span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+ 
+</span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;row&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-3&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;div&gt;</span><span class="s0">{% </span><span class="s1">if </span><span class="s2">latest_question_list </span><span class="s0">%}</span><span class="s3"> 
+             </span><span class="s4">&lt;ul&gt;</span><span class="s3"> 
+                </span><span class="s0">{% </span><span class="s1">for </span><span class="s2">question </span><span class="s9">in </span><span class="s2">latest_question_list </span><span class="s0">%}</span><span class="s3"> 
+                </span><span class="s4">&lt;li&gt;&lt;a </span><span class="s5">href=</span><span class="s6">&quot;/portal/</span><span class="s0">{{ </span><span class="s2">question</span><span class="s0">.</span><span class="s2">id </span><span class="s0">}}</span><span class="s6">/&quot;</span><span class="s4">&gt;</span><span class="s0">{{ </span><span class="s2">question</span><span class="s0">.</span><span class="s2">question_text </span><span class="s0">}}</span><span class="s4">&lt;/a&gt;&lt;/li&gt;</span><span class="s3"> 
+                </span><span class="s0">{% </span><span class="s1">endfor </span><span class="s0">%}</span><span class="s3"> 
+             </span><span class="s4">&lt;/ul&gt;</span><span class="s3"> 
+              </span><span class="s0">{% </span><span class="s1">else </span><span class="s0">%}</span><span class="s3"> 
+                    </span><span class="s4">&lt;p&gt;</span><span class="s3">нет доступных опросов.</span><span class="s4">&lt;/p&gt;</span><span class="s3"> 
+              </span><span class="s0">{% </span><span class="s1">endif </span><span class="s0">%}</span><span class="s3"> 
+        </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;div&gt;</span><span class="s3"> 
+ 
+        </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+ 
+    </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-6&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;h3&gt;</span><span class="s3">Глоссарий СМП НКМ</span><span class="s4">&lt;/h3&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;hr&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;h1 </span><span class="s5">class=</span><span class="s6">&quot;display-4&quot;</span><span class="s4">&gt;</span><span class="s3">A</span><span class="s4">&lt;/h1&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;/br&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;p </span><span class="s5">class=</span><span class="s6">&quot;glost&quot;</span><span class="s4">&gt;&lt;b&gt;</span><span class="s3">аварийная ситуация</span><span class="s4">&lt;/b&gt; &lt;ita&gt;</span><span class="s3">(прилагательное – аварийный)</span><span class="s4">&lt;/ita&gt;</span><span class="s3">emergency (англ.яз.)</span><span class="s4">&lt;/p&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;/br&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+            </span><span class="s4">&lt;p&gt;&lt;small&gt;&lt;b&gt;</span><span class="s3">Внештатная ситуация</span><span class="s4">&lt;/b&gt; </span><span class="s3">или </span><span class="s4">&lt;b&gt;</span><span class="s3">внештатное событие</span><span class="s4">&lt;/b&gt;</span><span class="s3">, которые требуют принятия 
+оперативных мер для смягчения опасности или неблагоприятных последствий для 
+здоровья человека и безопасности или качества жизни, собственности или 
+окружающей среды. Этот термин охватывает ядерные и радиологические аварийные 
+ситуации и обычные аварийные ситуации (чрезвычайные ситуации), такие, как 
+пожары, выход опасных химических веществ, бури, ураганы или землетрясения. Сюда 
+входят ситуации, в которых оперативные меры необходимы для смягчения эффектов 
+                воспринимаемой опасности.</span><span class="s4">&lt;/small&gt;</span><span class="s3"> 
+                </span><span class="s4">&lt;small&gt;&lt;b&gt;</span><span class="s3">транснациональная аварийная ситуация {transnational emergency}</span><span class="s4">&lt;/b&gt;</span><span class="s3">. Ядерная 
+или радиологическая аварийная ситуация, имеющая реальную, потенциальную 
+или воспринимаемую радиологическую значимость для более чем одного 
+государства. Она включает:включает: 
+                     </span><span class="s4">&lt;ul&gt;&lt;li&gt;</span><span class="s3">значительный трансграничный выброс радиоактивного материала 
+(транснациональная аварийная ситуация, однако, не обязательно 
+подразумевает значительный трансграничный выброс радиоактивного 
+материала);</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;li&gt;</span><span class="s3">общую аварийную ситуацию на установке или другое событие, которое 
+может привести к значительному трансграничному выбросу (атмосферному 
+    или водному) радиоактивного материала;</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;li&gt;</span><span class="s3">обнаружение потери или незаконного перемещения опасного источника, 
+который был перевезен или в отношении которого имеется подозрение, что он был перевезен через государственную границу;</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;li&gt;</span><span class="s3">аварийную ситуацию, приводящую к значительному нарушению международной торговли или международных поездок;</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;li&gt;</span><span class="s3">аварийную ситуацию, требующую осуществления защитных мер в отношении иностранных граждан или посольств в государстве, в котором она возникает;</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;li&gt;</span><span class="s3">аварийную ситуацию, приводящую или потенциально могущую привести к серьезным детерминированным эффектам и связанную с неисправностью 
+и/или проблемой (например, в оборудовании или программном обеспечении), которые могут иметь серьезные последствия для безопасности в международном масштабе;</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;li&gt;</span><span class="s3">аварийную ситуацию, приводящую или потенциально могущую привести к значительной обеспокоенности населения более чем одного государства вследствие реальной или воспринимаемой радиологической опасности.</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;/ul&gt;</span><span class="s3"> 
+ 
+            </span><span class="s4">&lt;/small&gt;</span><span class="s3"> 
+            </span><span class="s4">&lt;/p&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;h1 </span><span class="s5">class=</span><span class="s6">&quot;display-4&quot;</span><span class="s4">&gt;</span><span class="s3">Б</span><span class="s4">&lt;/h1&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;/br&gt;</span><span class="s3"> 
+         </span><span class="s4">&lt;p </span><span class="s5">class=</span><span class="s6">&quot;glost&quot;</span><span class="s4">&gt;&lt;b&gt;</span><span class="s3">аварийная ситуация</span><span class="s4">&lt;/b&gt; &lt;ita&gt;</span><span class="s3">(прилагательное – аварийный)</span><span class="s4">&lt;/ita&gt;</span><span class="s3">emergency (англ.яз.)</span><span class="s4">&lt;/p&gt;</span><span class="s3"> 
+        </span><span class="s4">&lt;/br&gt;</span><span class="s3"> 
+ 
+        </span><span class="s4">&lt;/p&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+    </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-3&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+ 
+    </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+</span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+</span><span class="s4">&lt;div&gt;</span><span class="s3"> 
+ 
+ 
+ 
+</span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+ 
+ 
+</span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot; align-self-center container-fluid bg-dark &quot; </span><span class="s4">&gt;</span><span class="s3"> 
+   </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;container  &quot;</span><span class="s4">&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;row align-items-center&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-12 col-md-2  bord&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-12 col-md-8 bord&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+                   </span><span class="s4">&lt;p </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;</span><span class="s3">Карта портала</span><span class="s4">&lt;/p&gt;</span><span class="s3"> 
+                 </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;row&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+                    </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;ul&gt;&lt;li </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;&lt;h6&gt;</span><span class="s3">Компоненты СМП:</span><span class="s4">&lt;/h6&gt;&lt;/li&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;</span><span class="s3">Стратегия</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;</span><span class="s3">Программа исследований</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;</span><span class="s3">Проект сооружения ПГЗРО</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;</span><span class="s3">Проект &quot;Досье обоснования долговременной безопасности ПГЗРО&quot;</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;/ul&gt;</span><span class="s3"> 
+                    </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+                    </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;ul&gt;&lt;li&gt;&lt;h6 </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;</span><span class="s3">Среда СМП:</span><span class="s4">&lt;/h6&gt;&lt;/li&gt;</span><span class="s3"> 
+                         </span><span class="s4">&lt;li&gt;</span><span class="s3">Ценности</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                         </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;</span><span class="s3">Система управления</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                         </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;</span><span class="s3">Международная практика ПИЛ&amp;захоронения РАО</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                         </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;</span><span class="s3">Бюджетирование и финансирование</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                         </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;</span><span class="s3">ИТ-инфраструктура</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                         </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;</span><span class="s3">Люди</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;/ul&gt;</span><span class="s3"> 
+                    </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+                    </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;ul&gt;&lt;li </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;&lt;h6&gt;</span><span class="s3">Сопровождение СМП:</span><span class="s4">&lt;/h6&gt;&lt;/li&gt;</span><span class="s3"> 
+                         </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;</span><span class="s3">Поддержка портала</span><span class="s4">&lt;/li&gt;</span><span class="s3"> 
+                         </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;&lt;del&gt;</span><span class="s3">Сеть экспертов</span><span class="s4">&lt;/del&gt;&lt;/li&gt;</span><span class="s3"> 
+                         </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;&lt;del&gt;</span><span class="s3">Онтология СМП</span><span class="s4">&lt;/del&gt;&lt;/li&gt;</span><span class="s3"> 
+                         </span><span class="s4">&lt;li </span><span class="s5">class=</span><span class="s6">&quot;btext&quot;</span><span class="s4">&gt;&lt;del&gt;</span><span class="s3">Сеть знаний СМП</span><span class="s4">&lt;/del&gt;&lt;/li&gt;</span><span class="s3"> 
+                     </span><span class="s4">&lt;/ul&gt;</span><span class="s3"> 
+                    </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+                 </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-12 col-md-2 bord&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;row align-items-center&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+            </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-12 col-md-2 bord&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-12 col-md-8 bord&quot;</span><span class="s4">&gt;&lt;h6&gt;</span><span class="s3">Нижнее меню сайта:</span><span class="s4">&lt;/h6&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-12 col-md-2 bord&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;row aalign-items-center&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+            </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-12 col-md-2 bord&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-12 col-md-8 bord&quot;</span><span class="s4">&gt;&lt;h6 </span><span class="s5">class=</span><span class="s6">&quot;&quot;</span><span class="s4">&gt;</span><span class="s3">Институт безопасного развития атомной энергии</span><span class="s4">&lt;/h6&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;div </span><span class="s5">class=</span><span class="s6">&quot;col-12 col-md-2 bord&quot;</span><span class="s4">&gt;</span><span class="s3"> 
+             </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+      </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+   </span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+</span><span class="s4">&lt;/div&gt;</span><span class="s3"> 
+ 
+ 
+ 
+</span><span class="s4">&lt;/body&gt;</span><span class="s3"> 
+</span><span class="s4">&lt;/html&gt;</span></pre>
+</body>
+</html>

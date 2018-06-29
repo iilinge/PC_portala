@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>graphmodel.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #606366; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(204,120,50); }
+.s1 { color: rgb(169,183,198); }
+.s2 { color: rgb(128,128,128); }
+.s3 { color: rgb(106,135,89); }
+.s4 { color: rgb(104,151,187); }
+</style>
+</head>
+<BODY BGCOLOR="#2b2b2b">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+graphmodel.py</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">import </span><span class="s1">neomodel 
+ 
+</span><span class="s2"># подключение к базе данных Neo4j</span><span class="s1"> 
+</span><span class="s2"># модель для neomodel</span><span class="s1"> 
+</span><span class="s0">from </span><span class="s1">neomodel </span><span class="s0">import </span><span class="s1">(config</span><span class="s0">, </span><span class="s1">StructuredNode</span><span class="s0">, </span><span class="s1">StringProperty</span><span class="s0">, </span><span class="s1">IntegerProperty</span><span class="s0">,</span><span class="s1"> 
+    UniqueIdProperty</span><span class="s0">, </span><span class="s1">RelationshipTo</span><span class="s0">, </span><span class="s1">RelationshipFrom) 
+ 
+config.DATABASE_URL = </span><span class="s3">'bolt://db_glossary:ibrae@localhost:7687'</span><span class="s1"> 
+ 
+ 
+ 
+</span><span class="s0">class </span><span class="s1">Country(StructuredNode): 
+    code = StringProperty(unique_index=</span><span class="s0">True, </span><span class="s1">required=</span><span class="s0">True</span><span class="s1">) 
+    inhabitant = RelationshipFrom(</span><span class="s3">'Person'</span><span class="s0">, </span><span class="s3">'IS_FROM'</span><span class="s1">) 
+ 
+</span><span class="s0">class </span><span class="s1">Person(StructuredNode): 
+    uid = UniqueIdProperty() 
+    name = StringProperty(unique_index=</span><span class="s0">True</span><span class="s1">) 
+    age = IntegerProperty(index=</span><span class="s0">True, </span><span class="s1">default=</span><span class="s4">0</span><span class="s1">) 
+    country = RelationshipTo(Country</span><span class="s0">, </span><span class="s3">'IS_FROM'</span><span class="s1">) 
+</span></pre>
+</body>
+</html>
